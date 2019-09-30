@@ -10,20 +10,7 @@
 
 .table-content .card-body {
   overflow: hidden;
-}
-
-.table-content table {
-  border-spacing: 0 15px;
-  border-collapse: separate;
-}
-
-.table-content td {
-  padding: 0.75em;
-  vertical-align: middle;
-}
-
-.table-content td a {
-  color: #00a8f9;
+  display: block;
 }
 
 .table-content .card-body .btn {
@@ -38,6 +25,20 @@
 .table-content .card-body .viewicon {
   background-color: #00d3f9;
   margin-right: 5px;
+}
+
+.table-content table {
+  border-spacing: 0 15px;
+  border-collapse: separate;
+}
+
+.table-content td {
+  padding: 0.75em;
+  vertical-align: middle;
+}
+
+.table-content td a {
+  color: #00a8f9;
 }
 
 .table-content tbody tr {
@@ -111,10 +112,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .pagination-block ul {
   list-style-type: none;
+}
+
+.pagination-block .pagination-arrows {
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-block .pagination-arrows a {
