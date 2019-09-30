@@ -120,6 +120,7 @@ span::after {
 
 .nav-menu li {
   padding: 5px 0;
+  color: #fff;
 }
 
 .nav-menu li[aria-expanded="true"] {
@@ -153,6 +154,7 @@ span::after {
 
 .link-content span {
   font-size: 19px;
+  color: #fff;
 }
 
 .adaptiveMenu {

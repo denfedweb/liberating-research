@@ -20,6 +20,9 @@
     a {
       color: #00a8f9;
     }
+    
+  }
+  .card-body{
     .btn {
       color: white;
       background-color: #7e939b;
@@ -30,8 +33,10 @@
     }
     .viewicon {
       background-color: #00d3f9;
+      margin-right: 5px;
     }
   }
+  
   tbody {
     tr {
       background-color: #e5fafe;
@@ -45,6 +50,18 @@
   thead {
     color: #7e939b;
   }
+
+  @media (max-width: 991px){
+    .table{
+      display: none;
+    }
+  }
+  @media (min-width: 992px){
+    .mobile-table{
+      display: none;
+    }
+  } 
+
 }
 .table-block-title {
   display: flex;
@@ -121,3 +138,40 @@
     }
   }
 }
+.mobile-table{
+  
+  .tab-subsection{
+    background-color: #e5fafe;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    span{
+      color: #00d3f9;
+    }
+  }
+  .tab-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      margin-bottom: 0;
+    }
+  }
+  .icons-mobile-table{
+    font-size: 50px;
+    .fa-plus-circle{
+      color: #7e939b;
+    }
+    .fa-minus-circle{
+      color: #00d3f9;
+      display: none;
+    }
+  }
+  .tab-contents{
+    display: none;
+  }
+ 
+}
+

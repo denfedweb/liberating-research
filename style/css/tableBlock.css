@@ -26,7 +26,7 @@
   color: #00a8f9;
 }
 
-.table-content td .btn {
+.table-content .card-body .btn {
   color: white;
   background-color: #7e939b;
   width: 50px;
@@ -35,8 +35,9 @@
   font-size: 25px;
 }
 
-.table-content td .viewicon {
+.table-content .card-body .viewicon {
   background-color: #00d3f9;
+  margin-right: 5px;
 }
 
 .table-content tbody tr {
@@ -51,6 +52,18 @@
 
 .table-content thead {
   color: #7e939b;
+}
+
+@media (max-width: 991px) {
+  .table-content .table {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .table-content .mobile-table {
+    display: none;
+  }
 }
 
 .table-block-title {
@@ -154,4 +167,55 @@
   letter-spacing: 4px;
   vertical-align: sub;
   background-color: transparent !important;
+}
+
+.mobile-table .tab-subsection {
+  background-color: #e5fafe;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+}
+
+.mobile-table .tab-subsection span {
+  color: #00d3f9;
+}
+
+.mobile-table .tab-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-table .tab-mobile p {
+  margin-bottom: 0;
+}
+
+.mobile-table .icons-mobile-table {
+  font-size: 50px;
+}
+
+.mobile-table .icons-mobile-table .fa-plus-circle {
+  color: #7e939b;
+}
+
+.mobile-table .icons-mobile-table .fa-minus-circle {
+  color: #00d3f9;
+  display: none;
+}
+
+.mobile-table .tab-contents {
+  display: none;
 }

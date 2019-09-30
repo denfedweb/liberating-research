@@ -88,6 +88,7 @@ span {
 		}
 	}
 	.top-menu {
+		
 		background-color: #303f47;
 	}
 	.submenu {
@@ -95,6 +96,7 @@ span {
 	}
 	li {
 		padding: 5px 0;
+		color: #fff;
 	}
 	li[aria-expanded="true"] {
 		background-color: #384952;
@@ -115,6 +117,7 @@ span {
 	padding: 5px 10px !important;
 	span {
 		font-size: 19px;
+		color: #fff;
 	}
 }
 .adaptiveMenu {

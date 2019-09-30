@@ -72,9 +72,9 @@
 }
 
 .contacts-section .select-phone .select-country-title {
-  width: 250px;
   color: #515153;
   margin: 0;
+  margin-right: 10px;
 }
 
 .contacts-section .btn-sendMessage {

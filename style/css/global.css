@@ -14,3 +14,7 @@ a:hover {
 .SumoSelect label {
   margin: 0;
 }
+
+.bold {
+  font-weight: bold;
+}
