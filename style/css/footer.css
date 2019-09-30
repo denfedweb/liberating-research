@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: #303F47;
+  background-color: #303f47;
 }
 
 .page-footer .navigation-links {
@@ -36,22 +36,29 @@
   background-color: transparent;
 }
 
-.navigation-links li {
+.navigation-links ul {
+  padding: 0;
+  margin: 0;
+  padding-right: 5px;
+}
+
+.navigation-links ul li {
   border-bottom: 1px solid #1e2c30;
   width: 200px;
   padding: 5px 0;
 }
 
-.navigation-links a {
+.navigation-links ul li a {
   color: white;
 }
 
-.navigation-links a:hover {
+.navigation-links ul li a:hover {
   color: #3df9c5;
 }
 
 .footer-wrapper {
   padding: 55px 0;
+  overflow: hidden;
 }
 
 .social-block {
@@ -81,7 +88,7 @@
 }
 
 .adress-list p {
-  color: #C0D2D6;
+  color: #c0d2d6;
   margin: 0;
   cursor: default;
   font-size: 16px;
@@ -109,7 +116,7 @@
           justify-content: center;
   width: 68px;
   height: 68px;
-  background-color: #1E2C30;
+  background-color: #1e2c30;
   border-radius: 50%;
   font-size: 23px;
   margin-right: 10px;
@@ -120,8 +127,8 @@
 }
 
 .footer-copyright {
-  color: #303F47;
-  background-color: #3DF9C5;
+  color: #303f47;
+  background-color: #3df9c5;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,7 +139,7 @@
 }
 
 .footer-copyright a {
-  color: #303F47;
+  color: #303f47;
 }
 
 .footer-copyright a:hover {

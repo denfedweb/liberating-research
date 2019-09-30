@@ -5,6 +5,17 @@ $(document).ready(function() {
         $(this).toggleClass('menu-link_active');
         $('.adaptiveMenu').toggle();
     });
+
+
+
+
+
+
+    $(".tab-mobile").click(function() {
+        $(this).next('div').slideToggle();
+        $(this).find(".fa-plus-circle").toggle(100);
+        $(this).find(".fa-minus-circle").toggle(100);
+       });
 });
 
 
