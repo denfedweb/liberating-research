@@ -1,0 +1,17 @@
+* {
+	font-family: 'Karla', sans-serif;
+	color: #303F47;
+}
+i{
+    color: white;
+}
+a{
+	&:hover{
+		text-decoration: none;
+	}
+ }
+.SumoSelect{
+    label{
+      margin: 0;
+    }
+} 

@@ -1,0 +1,137 @@
+.form-content {
+    background-color: #E4E9EC;
+
+    .SumoSelect {
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+
+        .SelectBox {
+            border: 1px solid #F0F5F7;
+            background-color: #F0F5F7;
+        }
+
+        p {
+            width: 100%;
+        }
+
+        label {
+            margin-bottom: 0;
+        }
+    }
+}
+.title-content {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	margin-top: 66px;
+	margin-bottom: 20px;
+	align-items: center;
+	span {
+		display: block;
+		width: 66px;
+		height: 66px;
+		background-image: url(/img/survey.svg);
+	}
+	h2 {
+		color: #3f3060;
+		background-size: auto 2em;
+		background-repeat: no-repeat;
+		background-position: left center;
+		min-height: 2em;
+		line-height: 2em;
+		padding-left: 1em;
+		display: inline-block;
+		width: auto;
+		margin-bottom: 0;
+		font-weight: 800;
+	}
+}
+.button-form-block {
+	margin-top: 20px;
+	width: 100%;
+}
+.btn-form{
+	background-color: #7e939b;
+	color: #fff;
+	font-size: 19px;
+	padding: 8px 25px;
+	i{
+		margin-left: 10px;
+		font-size: 20px;
+	}
+}
+.btn-form[aria-expanded="true"]{
+	.fas {
+		transform: rotate(180deg);
+		transition: ease-out 0.1s;
+	} 
+}
+.buttons-form {
+	margin-left: 10px;
+}
+.select-with-buttons {
+	display: flex;
+	align-items: center;
+}
+.second-select {
+	margin-top: 20px;
+	padding: 0;
+}
+.custom-radio {
+	margin-right: 30px;
+}
+.buttons-submit{
+	margin-top: 20px;
+    display: flex;
+	justify-content: space-between;
+	button{
+    margin-right: 50px;
+	}
+}
+.button-form-block {
+	.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: #303f47;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+	background-color: #303f47;
+}
+	input{
+		border: 1px solid #F0F5F7;
+		background-color: #F0F5F7;
+	}
+	
+	.custom-checkbox{
+		margin-right: 20px;
+	}
+	.btn{
+		background-color: #7E939B;
+		i{
+			font-size: 15px;
+			color: #fff;
+		}
+	}
+	.collection-add-date{
+		background-color: #fff;
+		padding: 0;
+		i{
+			color: #515153;
+			font-size: 30px;
+		}
+	}
+	.buttons-submit{
+		a{
+			background-color: #7e939b;
+			color: #fff;
+		}
+		.btn{
+      padding: 7px 35px;
+		}
+		button{
+			
+			color: #fff;
+			background-color: #4F4DB8;
+
+		}
+	}
+}

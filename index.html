@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Liberating Research</title>
+
+
+  <script src="https://kit.fontawesome.com/930caa097c.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </link>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/sumoselect.min.css">
+  </link>
+
+  <link href="/style/style.css" rel="stylesheet">
+  </link>
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+    <div class="brand-image">
+      <a class="navbar-brand" href="#">
+        <img src="img/liberatingresearch.png" width="239" height="36" alt="Liberating Research" />
+      </a>
+    </div>
+
+    <div class="header-links-block collapse navbar-collapse navabar-links" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto justify-content-end">
+        <li class="menu-item nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Surveys
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-item"><a href="#">View Surveys</a></div>
+            <div class="dropdown-item"><a href="#">Add Survey</a></div>
+          </div>
+        </li>
+        <li class="menu-item nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Users
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-item">
+              <a href="#">Patients</a><button type="button" class="btn header-btn">View</button>
+            </div>
+            <div class="dropdown-item">
+              <a href="#">Doctors/Nurses</a><button type="button" class="btn header-btn">View</button>
+            </div>
+            <div class="dropdown-item">
+              <a href="#">Charities/Support Groups</a><button type="button" class="btn header-btn">View</button>
+            </div>
+            <div class="dropdown-item">
+              <a href="#">Others</a><button type="button" class="btn header-btn">View</button>
+            </div>
+            <div class="dropdown-item">
+              <a href="#">Clients</a>
+              <div>
+                <button type="button" class="btn header-btn">View</button><button type="button"
+                  class="btn header-btn">Add</button>
+              </div>
+            </div>
+            <div class="dropdown-item">
+              <a href="#">Admins</a>
+              <div>
+                <button type="button" class="btn header-btn">View</button><button type="button"
+                  class="btn header-btn">Add</button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Other
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-item">
+              <a href="#">Clients</a>
+              <div>
+                <span class="counter-dropdown-item">225</span><button type="button"
+                  class="btn header-btn">View</button><button type="button" class="btn header-btn">Add</button>
+              </div>
+            </div>
+            <div class="dropdown-item">
+              <a href="#">Admins</a>
+              <div>
+                <button type="button" class="btn header-btn">View</button><button type="button"
+                  class="btn header-btn">Add</button>
+              </div>
+            </div>
+            <div class="dropdown-item">
+              <a href="#">Clients</a>
+              <div>
+                <button type="button" class="btn header-btn">View</button><button type="button"
+                  class="btn header-btn">Add</button>
+              </div>
+            </div>
+            <div class="dropdown-item">
+              <a href="#">Admins</a>
+              <div>
+                <button type="button" class="btn header-btn">View</button><button type="button"
+                  class="btn header-btn">Add</button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Emails
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">View Surveys</a>
+            <a class="dropdown-item" href="#">Add Survey</a>
+            <a class="dropdown-item" href="#">View Surveys</a>
+            <a class="dropdown-item" href="#">Add Survey</a>
+          </div>
+        </li>
+
+        <li class="menu-item nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Paymens
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">View Surveys</a>
+            <a class="dropdown-item" href="#">Add Survey</a>
+            <a class="dropdown-item" href="#">View Surveys</a>
+            <a class="dropdown-item" href="#">Add Survey</a>
+          </div>
+        </li>
+        <li class="menu-item nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            CMS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">View Surveys</a>
+            <a class="dropdown-item" href="#">Add Survey</a>
+            <a class="dropdown-item" href="#">View Surveys</a>
+            <a class="dropdown-item" href="#">Add Survey</a>
+          </div>
+        </li>
+
+        <li class="nav-item logout">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-adaptive-btn ml-auto">
+      <a href="#" class="menu-link"><span></span></a>
+    </div>
+    </div>
+  </nav>
+
+  <!-- sub menu -->
+
+  <div class="navbar navbar-expand-md navbar-dark submenu-nav">
+    <div class="collapse navbar-collapse" id="navbarText">
+      <div class="container">
+        <ul class="navbar-nav ml-auto justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- adaptive content -->
+
+  <section class="adaptiveMenu">
+    <div class="nav-menu">
+      <ul class="top-menu">
+        <li data-toggle="collapse" href="#collapseLinkCMS" role="button" aria-expanded="false"
+          aria-controls="collapseLinkCMS">
+          <a>CMS</a><i class="fas fa-caret-down"></i>
+        </li>
+        <div class="collapse" id="collapseLinkCMS">
+          <li class="link-content">
+            <span>Homepage</span>
+            <div>
+              <a href="#" class="btn btn-adaptiveMenu"><i class="fas fa-pencil-alt"></i></a>
+            </div>
+          </li>
+          <li class="link-content">
+            <span>FAQ (Others)</span>
+            <div>
+              <a href="" class="btn btn-adaptiveMenu"><i class="fas fa-pencil-alt"></i></a>
+              <a href="" class="btn btn-adaptiveMenu"><i class="fas fa-plus"></i></a>
+            </div>
+          </li>
+        </div>
+        <li data-toggle="collapse" href="#collapseLinkProject" role="button" aria-expanded="false"
+          aria-controls="collapseLinkProject">
+          <a>Project</a><i class="fas fa-caret-down"></i>
+        </li>
+        <div class="collapse" id="collapseLinkProject">
+          <li class="link-content">
+            <span>Homepage</span>
+            <div>
+              <a href="#" class="btn btn-adaptiveMenu"><i class="fas fa-pencil-alt"></i></a>
+            </div>
+          </li>
+          <li class="link-content">
+            <span>FAQ (Others)</span>
+            <div>
+              <a href="" class="btn btn-adaptiveMenu"><i class="fas fa-pencil-alt"></i></a>
+              <a href="" class="btn btn-adaptiveMenu"><i class="fas fa-plus"></i></a>
+            </div>
+          </li>
+        </div>
+        <li data-toggle="collapse" href="#collapseLinkUsers" role="button" aria-expanded="false"
+          aria-controls="collapseLinkUsers">
+          <a>Users</a><i class="fas fa-caret-down"></i>
+        </li>
+        <div class="collapse" id="collapseLinkUsers">
+          <li class="link-content">
+            <span>Homepage</span>
+            <div>
+              <span class="counter-dropdown-item" style="color: black">225</span>
+              <a href="#" class="btn btn-adaptiveMenu"><i class="fas fa-pencil-alt"></i></a>
+            </div>
+          </li>
+          <li class="link-content">
+            <span>FAQ (Others)</span>
+            <div>
+              <a href="" class="btn btn-adaptiveMenu"><i class="fas fa-pencil-alt"></i></a>
+              <a href="" class="btn btn-adaptiveMenu"><i class="fas fa-plus"></i></a>
+            </div>
+          </li>
+        </div>
+        <li data-toggle="collapse" href="#collapseLinkOther" role="button" aria-expanded="false"
+          aria-controls="collapseLinkOther">
+          <a>Other</a><i class="fas fa-caret-down"></i>
+        </li>
+        <div class="collapse" id="collapseLinkOther">
+          <li class="link-content">
+            <span>Homepage</span>
+            <div>
+              <a href="#" class="btn btn-adaptiveMenu"><i class="fas fa-pencil-alt"></i></a>
+            </div>
+          </li>
+          <li class="link-content">
+            <span>FAQ (Others)</span>
+            <div>
+              <a href="" class="btn btn-adaptiveMenu"><i class="fas fa-pencil-alt"></i></a>
+              <a href="" class="btn btn-adaptiveMenu"><i class="fas fa-plus"></i></a>
+            </div>
+          </li>
+        </div>
+      </ul>
+      <ul class="submenu">
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Charities</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Condition Q&A</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- section body content -->
+
+  <section class="form-content">
+    <div class="container">
+      <!-- section title content -->
+
+      <div class="row justify-content-md-center">
+        <div class="title-content">
+          <span></span>
+          <h2>View Patients / Carers</h2>
+        </div>
+      </div>
+      <!-- section collapse button content form -->
+
+      <div class="row justify-content-md-start">
+        <button class="btn btn-form" type="button" data-toggle="collapse" data-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">Edit Search Criteria <i class="fas fa-caret-down"></i></button>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="collapse button-form-block" id="collapseExample">
+          <div class="card card-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName">Name</label>
+                  <input type="email" class="form-control" id="inputName" />
+                </div>
+                <div class="form-group col-md-6 justify-content-md-center">
+                  <label for="inputVerified">Verified</label>
+                  <div class="container">
+                    <div class="row">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioVerified1" name="customRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioVerified1">Any (excluding
+                          Rejected/Deleted)</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioVerified2" name="customRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioVerified2">Any</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioVerified3" name="customRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioVerified3">Yes</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioVerified4" name="customRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioVerified4">No</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioVerified5" name="customRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioVerified5">Awaiting Approval</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioVerified6" name="customRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioVerified6">Awaiting Approval</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputType">Type</label>
+                  <select class="js-dropdown form-control" id="inputType">
+                    <option>TEST</option>
+                    <option>TEST2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCondition">Condition</label>
+                  <div class="select-with-buttons">
+                    <select class="js-dropdown form-control" id="inputCondition">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-remove-btn" data-role="collection-remove-button"
+                        style="display: none;"><i class="fas fa-times"></i></a>
+                      <a href="#" class="btn collection-add-btn" data-role="collection-add-button"><i
+                          class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="second-select col-md-6">
+                    <select class="js-dropdown form-control" id="inputCondition">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputExclude">Exclude Condition</label>
+                  <div class="select-with-buttons">
+                    <select class="js-dropdown form-control" id="inputExclude">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-remove-btn" data-role="collection-remove-button"
+                        style="display: none;"><i class="fas fa-times"></i></a>
+                      <a href="#" class="btn collection-add-btn" data-role="collection-add-button"><i
+                          class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCountry">Country</label>
+                  <div class="select-with-buttons">
+                    <select class="js-dropdown form-control" id="inputCountry">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-remove-btn" data-role="collection-remove-button"
+                        style="display: none;"><i class="fas fa-times"></i></a>
+                      <a href="#" class="btn collection-add-btn" data-role="collection-add-button"><i
+                          class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputRegion">Region</label>
+                  <div class="select-with-buttons">
+                    <select class="js-dropdown form-control" id="inputRegion">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-remove-btn" data-role="collection-remove-button"
+                        style="display: none;"><i class="fas fa-times"></i></a>
+                      <a href="#" class="btn collection-add-btn" data-role="collection-add-button"><i
+                          class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCountry">Country</label>
+                  <div class="select-with-buttons">
+                    <select class="js-dropdown form-control" id="inputCountry">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-remove-btn" data-role="collection-remove-button"
+                        style="display: none;"><i class="fas fa-times"></i></a>
+                      <a href="#" class="btn collection-add-btn" data-role="collection-add-button"><i
+                          class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputMedication">Medication</label>
+                  <div class="select-with-buttons">
+                    <select class="js-dropdown form-control" id="inputMedication">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-remove-btn" data-role="collection-remove-button"
+                        style="display: none;"><i class="fas fa-times"></i></a>
+                      <a href="#" class="btn collection-add-btn" data-role="collection-add-button"><i
+                          class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="second-select col-md-6">
+                    <select class="js-dropdown form-control">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputTreatments">Treatments</label>
+                  <div class="select-with-buttons">
+                    <select class="js-dropdown form-control" id="inputTreatments">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-remove-btn" data-role="collection-remove-button"
+                        style="display: none;"><i class="fas fa-times"></i></a>
+                      <a href="#" class="btn collection-add-btn" data-role="collection-add-button"><i
+                          class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="second-select col-md-6">
+                    <select class="js-dropdown form-control">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputExcludeMedication">Exclude Medication</label>
+                  <div class="select-with-buttons">
+                    <select class="js-dropdown form-control" id="inputExcludeMedication">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-remove-btn" data-role="collection-remove-button"
+                        style="display: none;"><i class="fas fa-times"></i></a>
+                      <a href="#" class="btn collection-add-btn" data-role="collection-add-button"><i
+                          class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputExcludeTreatments">Exclude Treatments</label>
+                  <div class="select-with-buttons">
+                    <select class="js-dropdown form-control" id="inputExcludeTreatments">
+                      <option>TEST</option>
+                      <option>TEST2</option>
+                    </select>
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-remove-btn" data-role="collection-remove-button"
+                        style="display: none;"><i class="fas fa-times"></i></a>
+                      <a href="#" class="btn collection-add-btn" data-role="collection-add-button"><i
+                          class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputUserID">LR User ID</label>
+                  <input class="form-control" id="inputUserID">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputJoined">Joined From</label>
+                  <div class="select-with-buttons">
+                    <input class="form-control" id="inputJoined">
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-add-date" data-role="collection-add-date"><i
+                          class="far fa-calendar-alt"></i></a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputRegistered">Registered By</label>
+
+                  <select class="js-dropdown form-control" id="inputRegistered">
+                    <option>TEST</option>
+                    <option>TEST2</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputJoinedTo">Joined To</label>
+                  <div class="select-with-buttons">
+                    <input class="form-control" id="inputJoinedTo">
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-add-date" data-role="collection-add-date"><i
+                          class="far fa-calendar-alt"></i></a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCharity">Charity</label>
+
+                  <select class="js-dropdown form-control" id="inputCharity">
+                    <option>TEST</option>
+                    <option>TEST2</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputBirthFrom">Date of Birth From</label>
+                  <div class="select-with-buttons">
+                    <input class="form-control" id="inputBirthFrom">
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-add-date" data-role="collection-add-date"><i
+                          class="far fa-calendar-alt"></i></a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputGender">Gender</label>
+                  <div class="container">
+                    <div class="row">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioGender1" name="GenderRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioGender1">Any</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioGender2" name="GenderRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioGender2">Male</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioGender3" name="GenderRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioGender3">Female</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioGender4" name="GenderRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioGender4">Transgender</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="inputBirthTo">Date of Birth To</label>
+                  <div class="select-with-buttons">
+                    <input class="form-control" id="inputBirthTo">
+                    <div class="buttons-form">
+                      <a href="#" class="btn collection-add-date" data-role="collection-add-date"><i
+                          class="far fa-calendar-alt"></i></a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCurrentlyMedication">Currently On Medication</label>
+                  <div class="container">
+                    <div class="row">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioCurrentlyMedication1" name="CurrentlyRadio"
+                          class="custom-control-input" />
+                        <label class="custom-control-label" for="radioCurrentlyMedication1">Any</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioCurrentlyMedication2" name="CurrentlyRadio"
+                          class="custom-control-input" />
+                        <label class="custom-control-label" for="radioCurrentlyMedication2">Yes</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioCurrentlyMedication3" name="CurrentlyRadio"
+                          class="custom-control-input" />
+                        <label class="custom-control-label" for="radioCurrentlyMedication3">No</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputTelephone">Telephone</label>
+                  <input type="tel" class="form-control" id="inputTelephone">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputWebsite">Website</label>
+                  <input type="text" class="form-control" id="inputWebsite">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputMobile">Mobile</label>
+                  <input type="tel" class="form-control" id="inputMobile">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputTwitter">Twitter Username</label>
+                  <input type="email" class="form-control" id="inputTwitter">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputDeletion">Deletion Status</label>
+                  <div class="container">
+                    <div class="row">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioDeletion1" name="DeletionRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioDeletion1">Any</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioDeletion2" name="DeletionRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioDeletion2">Active</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioDeletion3" name="DeletionRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioDeletion3">Deletion Requested</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                   <label for="inputEnteredMedications">User Has Entered Their Medications</label>
+                  <div class="container">
+                    <div class="row">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioEnteredMedications1" name="EnteredMedicationsRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioEnteredMedications1">Any</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioEnteredMedications2" name="EnteredMedicationsRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioEnteredMedications2">Yes</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="radioEnteredMedications3" name="EnteredMedicationsRadio" class="custom-control-input" />
+                        <label class="custom-control-label" for="radioEnteredMedications3">No</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputDeletion">Include Deceased Cared For People?</label>
+                    <div class="container">
+                      <div class="row">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="radioIncludeDeceased1" name="IncludeDeceasedRadio" class="custom-control-input" />
+                          <label class="custom-control-label" for="radioIncludeDeceased1">Yes</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="radioIncludeDeceased2" name="IncludeDeceasedRadio" class="custom-control-input" />
+                          <label class="custom-control-label" for="radioIncludeDeceased2">No</label>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputActivationStatus">Email Activation Status</label>
+                    <div class="container">
+                      <div class="row">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="radioActivationStatus1" name="ActivationStatusRadio" class="custom-control-input" />
+                          <label class="custom-control-label" for="radioActivationStatus1">Any</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="radioActivationStatus2" name="ActivationStatusRadio" class="custom-control-input" />
+                          <label class="custom-control-label" for="radioActivationStatus2">Activated</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="radioActivationStatus3" name="ActivationStatusRadio" class="custom-control-input" />
+                            <label class="custom-control-label" for="radioActivationStatus3">Inactive</label>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputInStatus">Opt In Status</label>
+                    <div class="container">
+                      <div class="row">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="InStatus1">
+                          <label class="custom-control-label" for="InStatus1">Any</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="InStatus2">
+                          <label class="custom-control-label" for="InStatus2">Email</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="InStatus3">
+                          <label class="custom-control-label" for="InStatus3">Phone</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="InStatus4">
+                          <label class="custom-control-label" for="InStatus4">SMS</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="InStatus5">
+                          <label class="custom-control-label" for="InStatus5">Newsletter</label>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="col-md-12">
+                <div class="row buttons-submit">
+                  <a href="" class="btn">Reset Search Criteria</a>
+                  <button class="btn btn-search" type="submit">Search <i class="fas fa-search"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section table block -->
+
+
+   <section class="table-content">
+<div class="container">
+  <div class="row table-block-title">
+  <div>
+   Your search returned <span>10419</span> matches
+  </div>
+  <div>
+<button class="btn btn-register">User Registration</button>
+<button class="btn">Export</button>
+  </div>
+</div>
+
+<div class="row card card-body">
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Joined <i class="fas fa-caret-down" aria-hidden="true"></i></th>
+        <th scope="col">Type</th>
+        <th scope="col">Condition/s</th>
+        <th scope="col">Country</th>
+        <th scope="col">Contact</th>
+        <th scope="col">Status</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">John Wick</th>
+        <td>
+          <div>29/03/19</div>
+          <div>6 months ago</div>
+        </td>
+        <td>Patient</td>
+        <td>Acne (Acute Miliary Tuberculosis)
+          Acne (Saturation)</td>
+        <td>United Kingdom (England)</td>
+        <td> <a href="mailto:karserj@gmail.com" title="karserj@gmail.com">
+            karserj@gmail.c... </a>
+          <br>M: 079528824 </td>
+        <td>Unverified</td>
+        <td>
+          <a href="#" class="btn viewicon"><i class="fas fa-pencil-alt"></i></a>
+          <a href="#" class="btn deleteicon"><i class="fas fa-times"></i></a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">John Wick</th>
+        <td>
+          <div>29/03/19</div>
+          <div>6 months ago</div>
+        </td>
+        <td>Patient</td>
+        <td>Acne (Acute Miliary Tuberculosis)
+          Acne (Saturation)</td>
+        <td>United Kingdom (England)</td>
+        <td> <a href="mailto:karserj@gmail.com" title="karserj@gmail.com">
+            karserj@gmail.c... </a>
+          <br>M: 079528824 </td>
+        <td>Unverified</td>
+        <td>
+          <a href="#" class="btn viewicon"><i class="fas fa-pencil-alt"></i></a>
+          <a href="#" class="btn deleteicon"><i class="fas fa-times"></i></a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">John Wick</th>
+        <td>
+          <div>29/03/19</div>
+          <div>6 months ago</div>
+        </td>
+        <td>Patient</td>
+        <td>Acne (Acute Miliary Tuberculosis)
+          Acne (Saturation)</td>
+        <td>United Kingdom (England)</td>
+        <td> <a href="mailto:karserj@gmail.com" title="karserj@gmail.com">
+            karserj@gmail.c... </a>
+          <br>M: 079528824 </td>
+        <td>Unverified</td>
+        <td>
+          <a href="#" class="btn viewicon"><i class="fas fa-pencil-alt"></i></a>
+          <a href="#" class="btn deleteicon"><i class="fas fa-times"></i></a>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+  <nav aria-label="..." class="pagination-block">
+    <ul class="pagination">
+      
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active" aria-current="page">
+        <span class="page-link">
+          2
+          <span class="sr-only">(current)</span>
+        </span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">6</a></li>
+      <li class="page-item"><a class="page-link" href="#">7</a></li>
+      <li class="separator"><span>...</span></li>
+      <li class="page-item"><a class="page-link" href="#">999</a></li>
+    </ul>
+    <ul class="pagination-arrows"><li class="page-item"><a href="#" class="page-link right" rollapp-href="#"><i class="fas fa-caret-right"></i></a></li></ul>
+  </nav>
+  
+</div>
+
+
+</div>
+</section>
+
+  <!-- section Get in Touch block -->
+
+<section class="contacts-section">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <div class="row">
+      <div class="col border-right">
+        <i class="far fa-envelope"></i>
+        <strong>Email</strong>
+        <a href="mailto:info@liberatingresearch.com">info@liberatingresearch.com</a>
+        <button class="btn btn-sendMessage">Send us a message</button>
+      </div>
+      <div class="col">
+        <i class="fas fa-phone-alt"></i>
+        <strong>Phone</strong>
+        <div class="select-phone">
+          <label class="select-country-title" for="select-country">Select a country</label>
+          <select class="js-dropdown" id="select-country">
+            <option>TEST</option>
+            <option>TEST2</option>
+            <option>TEST3</option>
+          </select>
+        </div>
+        <div class="phone-container">
+          <span data-country-code="US" class="visible">+1 646 701 0050</span>
+          <span data-country-code="GB">+44 (0) 207 249 4461</span>
+          <span data-country-code="DE">+49 (0)30 5679 5440</span>
+          <span data-country-code="FR">+33 176 66 09 87</span>
+          <span data-country-code="IT">+39 06 8958 7025</span>
+          <span data-country-code="ES">+34 918 295 212</span>
+          <span data-country-code="CA">+1 613 963 0074</span>
+          <span data-country-code="AU">+61 261 452 396</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+
+
+<footer class="page-footer font-small blue">
+  <div class="container text-center text-md-left footer-wrapper">
+    <div class="row">
+      <div class="col-md-5 mt-md-0 mt-3 social-block">
+        <div class="language-list">
+          <label for="">Language</label>
+          <select class="js-dropdown">
+            <option>EN</option>
+            <option>DE</option>
+            <option>ES</option>
+            <option>FR</option>
+            <option>IT</option>
+          </select>
+        </div>
+        <div class="social-media">
+          <div class="social"><a href="https://www.facebook.com/liberatingresearch" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+          <div class="social"><a href="https://twitter.com/liberatingres" target="_blank"><i class="fab fa-twitter"></i></a></div>
+          <div class="social"><a href="https://www.linkedin.com/company/liberating-research" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+        </div>
+      </div>
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <div class="col-md-3 mb-md-0 mb-3 adress-list">
+        <ul class="list-unstyled">
+          <li>
+              <p>Liberating Research</p>
+          </li>
+          <li>
+              <p>Unit 7/8 (1st Floor)</p>
+          </li>
+          <li>
+              <p>Warwick Works</p>
+          </li>
+          <li>
+              <p>Downs Road</p>
+          </li>
+          <li>
+            <p>London E5 8QJ UK</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3 navigation-links">
+        <ul>
+            <li><a href="http://lr.karserj.com/">Home</a></li>
+            <li><a href="http://lr.karserj.com/about">About Us</a></li>
+            <li><a href="http://lr.karserj.com/howitworks/">How It Works</a></li>
+            <li><a href="http://lr.karserj.com/faq/">FAQ</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://lr.karserj.com/clients">Clients</a></li>
+            <li><a href="http://lr.karserj.com/conditions">Condition Q&amp;A</a></li>
+            <li><a href="http://lr.karserj.com/privacy">Privacy</a></li>
+            <li><a href="http://lr.karserj.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-right py-3"><div class="container">
+    <a href="http://www.liberatingit.com/">Developed by Liberating IT © 2019</a></div>
+  </div>
+</footer>
+  <!-- Footer -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/jquery.sumoselect.min.js"></script>
+
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

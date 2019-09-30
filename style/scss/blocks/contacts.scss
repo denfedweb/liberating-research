@@ -1,0 +1,64 @@
+.contacts-section{
+    margin: 60px 0;
+    h2{
+        text-align: center;
+        color: #00D3F9;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .border-right{
+        border-right: 1px solid #ccc;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        strong, a{
+            color: #515153;
+            font-size: 22px;
+        }
+        i{
+            font-size: 50px;
+            color: #00D3F9;
+            margin-bottom: 10px;
+        }
+        .phone-container{
+            margin: 10px 0;
+            span{
+                display: none;
+                font-weight: 600;
+                font-size: 24px;
+                color: #00D3F9;
+                margin-top: 10px;
+            }
+            .visible{
+                display: block;
+            }
+        }
+        
+    }
+    .select-phone{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        label{
+            font-size: 18px;
+        }
+        .select-country-title{
+            width: 250px;
+            color: #515153;
+            margin: 0;
+        }
+        
+    }
+    .btn-sendMessage{
+        background-color: #00D3F9;
+        color: white;
+        padding: 0.5em 2em;
+        font-size: 19px;
+        margin: 20px 0;
+    }
+}
+

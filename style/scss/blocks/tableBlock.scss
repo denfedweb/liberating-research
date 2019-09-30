@@ -1,0 +1,123 @@
+.btn {
+  &:hover {
+    color: white;
+    opacity: 0.8;
+  }
+}
+.table-content {
+  background-color: #e4e9ec;
+  padding-bottom: 70px;
+  .card-body {
+    overflow: hidden;
+  }
+  table {
+    border-spacing: 0 15px;
+    border-collapse: separate;
+  }
+  td {
+    padding: 0.75em;
+    vertical-align: middle;
+    a {
+      color: #00a8f9;
+    }
+    .btn {
+      color: white;
+      background-color: #7e939b;
+      width: 50px;
+      height: 50px;
+      margin-bottom: 5px;
+      font-size: 25px;
+    }
+    .viewicon {
+      background-color: #00d3f9;
+    }
+  }
+  tbody {
+    tr {
+      background-color: #e5fafe;
+      color: #7e939b;
+    }
+    th {
+      vertical-align: middle;
+      color: #394a57;
+    }
+  }
+  thead {
+    color: #7e939b;
+  }
+}
+.table-block-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  font-size: 24px;
+  color: #515153;
+  margin-bottom: 20px;
+  span {
+    color: #4f4db8;
+    font-weight: bold;
+  }
+  .btn {
+    color: white;
+    padding: 10px 38px;
+    background-color: #7e939b;
+    font-size: 19px;
+    margin-left: 10px;
+    border-radius: 6px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .btn-register {
+    background-color: #00d3f9;
+  }
+}
+.pagination-block {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    list-style-type: none;
+  }
+  .pagination-arrows {
+    a {
+      color: white;
+      background-color: #4f4db8;
+      border-radius: 50% !important;
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+    }
+  }
+}
+.pagination {
+  li {
+    margin-right: 5px;
+    a {
+      color: #394a57 !important;
+      border-radius: 50%;
+      border: none;
+      background-color: #e5fafe;
+      &:hover {
+        background-color: #e5fafe;
+      }
+    }
+    span {
+      border-radius: 50%;
+      background-color: #00d3f9 !important;
+      border: none;
+    }
+  }
+  .separator {
+    background-color: transparent;
+    display: flex;
+    align-items: flex-end;
+    span {
+      letter-spacing: 4px;
+      vertical-align: sub;
+      background-color: transparent !important;
+    }
+  }
+}

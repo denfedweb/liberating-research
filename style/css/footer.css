@@ -1,0 +1,140 @@
+.page-footer {
+  background-color: #303F47;
+}
+
+.page-footer .navigation-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.language-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.language-list label {
+  color: white;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.language-list .SumoSelect {
+  width: 70px;
+}
+
+.language-list .SumoSelect span {
+  color: white;
+}
+
+.language-list .SumoSelect .SelectBox {
+  background-color: transparent;
+}
+
+.navigation-links li {
+  border-bottom: 1px solid #1e2c30;
+  width: 200px;
+  padding: 5px 0;
+}
+
+.navigation-links a {
+  color: white;
+}
+
+.navigation-links a:hover {
+  color: #3df9c5;
+}
+
+.footer-wrapper {
+  padding: 55px 0;
+}
+
+.social-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adress-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adress-list p {
+  color: #C0D2D6;
+  margin: 0;
+  cursor: default;
+  font-size: 16px;
+}
+
+.adress-list ul {
+  margin: 0;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 68px;
+  height: 68px;
+  background-color: #1E2C30;
+  border-radius: 50%;
+  font-size: 23px;
+  margin-right: 10px;
+}
+
+.social:hover {
+  opacity: 0.85;
+}
+
+.footer-copyright {
+  color: #303F47;
+  background-color: #3DF9C5;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-copyright a {
+  color: #303F47;
+}
+
+.footer-copyright a:hover {
+  color: white;
+}
