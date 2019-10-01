@@ -15,8 +15,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </link>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/sumoselect.min.css">
-  </link>
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
+
 
   <link href="/style/style.css" rel="stylesheet">
   </link>
@@ -362,7 +363,8 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="inputType">Type</label>
-                  <select class="js-dropdown form-control" id="inputType">
+                  <select class="js-dropdown form-control" multiple="multiple" id="inputType">
+                    <option></option>
                     <option>TEST</option>
                     <option>TEST2</option>
                   </select>
@@ -384,7 +386,7 @@
                     </div>
                   </div>
                   <div class="second-select col-md-6">
-                    <select class="js-dropdown form-control" id="inputCondition">
+                    <select class="js-dropdown form-control">
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -440,9 +442,9 @@
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputCountry">Country</label>
+                  <label for="inputSecondCountry">Country</label>
                   <div class="select-with-buttons">
-                    <select class="js-dropdown form-control" id="inputCountry">
+                    <select class="js-dropdown form-control" id="inputSecondCountry">
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -777,7 +779,7 @@
               
               <div class="col-md-12">
                 <div class="row buttons-submit">
-                  <a href="" class="btn">Reset Search Criteria</a>
+                  <a href="http://lr.karserj.com/admin/users/patient/?search_reset=1" class="btn btn-reset">Reset Search Criteria</a>
                   <button class="btn btn-search" type="submit">Search <i class="fas fa-search"></i></button>
                 </div>
               </div>
@@ -798,7 +800,19 @@
       </div>
       <div>
         <button class="btn btn-register">User Registration</button>
-        <button class="btn">Export</button>
+        <button class="btn btn-popup-export">Export</button>
+      </div>
+      <div class="popup-export">
+        <div class="popup-export-wrapper">
+          <div class="popup-export-close"><i class="fas fa-times-circle"></i></div>
+          <div class="popup-export-title"><p>If you would like to include current/previous medications and the year of diagnosis for a specific condition then please select the condition below</p>
+          </div>
+          <select class="js-dropdown form-control">
+            <option>TEST</option>
+            <option>TEST2</option>
+          </select>
+          <button class="btn">Export</button>
+        </div>
       </div>
     </div>
 
@@ -1045,8 +1059,9 @@
   </div>
   <div class="popup-content">
     <div class="container">
-      <h2 class="landscapeonly">Comments, questions, queries or suggestions<br>
+      <h2 class="land-scape-only">Comments, questions, queries or suggestions<br>
         <span>- we would love to hear from you</span></h2>
+        <div class="popup-close"><i class="fas fa-times-circle"></i></div>
     <form method="POST" class="ajaxForm" action="http://lr.karserj.com/send-message" novalidate="novalidate">
       <div class="row">
       <div class="col-md-5">
@@ -1172,7 +1187,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/jquery.sumoselect.min.js"></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

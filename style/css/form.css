@@ -2,29 +2,6 @@
   background-color: #E4E9EC;
 }
 
-.form-content .SumoSelect {
-  width: 100% !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.form-content .SumoSelect .SelectBox {
-  border: 1px solid #F0F5F7;
-  background-color: #F0F5F7;
-}
-
-.form-content .SumoSelect p {
-  width: 100%;
-}
-
-.form-content .SumoSelect label {
-  margin-bottom: 0;
-}
-
 .title-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,6 +44,10 @@
   width: 100%;
 }
 
+.button-form-block .select2 {
+  width: 100% !important;
+}
+
 .btn-form {
   background-color: #7e939b;
   color: #fff;
@@ -77,6 +58,10 @@
 .btn-form i {
   margin-left: 10px;
   font-size: 20px;
+}
+
+.btn-search, .btn-reset {
+  padding: 12px 30px !important;
 }
 
 .btn-form[aria-expanded="true"] .fas {

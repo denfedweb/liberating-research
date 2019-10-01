@@ -1,24 +1,5 @@
 .form-content {
     background-color: #E4E9EC;
-
-    .SumoSelect {
-        width: 100% !important;
-        display: flex;
-        align-items: center;
-
-        .SelectBox {
-            border: 1px solid #F0F5F7;
-            background-color: #F0F5F7;
-        }
-
-        p {
-            width: 100%;
-        }
-
-        label {
-            margin-bottom: 0;
-        }
-    }
 }
 .title-content {
 	display: flex;
@@ -50,6 +31,9 @@
 .button-form-block {
 	margin-top: 20px;
 	width: 100%;
+	.select2{
+		width: 100% !important;
+    }
 }
 .btn-form{
 	background-color: #7e939b;
@@ -60,6 +44,9 @@
 		margin-left: 10px;
 		font-size: 20px;
 	}
+}
+.btn-search, .btn-reset {
+	padding: 12px 30px !important;
 }
 .btn-form[aria-expanded="true"]{
 	.fas {
