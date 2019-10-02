@@ -15,8 +15,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </link>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/sumoselect.min.css">
-  </link>
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" /> -->
+
 
   <link href="/style/style.css" rel="stylesheet">
   </link>
@@ -25,7 +27,8 @@
 <body>
 
   <!-- header -->
-  <nav class="navbar navbar-expand-md navbar-dark">
+  <div class="header-block-toggle"></div>
+  <nav class="navbar navbar-expand-md navbar-dark nav-toggle">
     <div class="container">
     <div class="brand-image">
       <a class="navbar-brand" href="#">
@@ -325,7 +328,7 @@
                   <div class="container">
                     <div class="row">
                       <div class="custom-control custom-radio">
-                        <input type="radio" id="radioVerified1" name="customRadio" class="custom-control-input" />
+                        <input type="radio" id="radioVerified1" name="customRadio" class="custom-control-input" checked="checked" />
                         <label class="custom-control-label" for="radioVerified1">Any (excluding
                           Rejected/Deleted)</label>
                       </div>
@@ -363,8 +366,13 @@
                 <div class="form-group col-md-6">
                   <label for="inputType">Type</label>
                   <select class="js-dropdown form-control" id="inputType">
+                    <option></option>
                     <option>TEST</option>
                     <option>TEST2</option>
+                    <option>TEST3</option>
+                    <option>TEST4</option>
+                    <option>TEST5</option>
+                    <option>TEST6</option>
                   </select>
                 </div>
               </div>
@@ -373,6 +381,7 @@
                   <label for="inputCondition">Condition</label>
                   <div class="select-with-buttons">
                     <select class="js-dropdown form-control" id="inputCondition">
+                        <option></option>
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -384,7 +393,8 @@
                     </div>
                   </div>
                   <div class="second-select col-md-6">
-                    <select class="js-dropdown form-control" id="inputCondition">
+                    <select class="js-dropdown form-control">
+                        
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -394,6 +404,7 @@
                   <label for="inputExclude">Exclude Condition</label>
                   <div class="select-with-buttons">
                     <select class="js-dropdown form-control" id="inputExclude">
+                        <option></option>
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -411,6 +422,7 @@
                   <label for="inputCountry">Country</label>
                   <div class="select-with-buttons">
                     <select class="js-dropdown form-control" id="inputCountry">
+                        <option></option>
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -426,6 +438,7 @@
                   <label for="inputRegion">Region</label>
                   <div class="select-with-buttons">
                     <select class="js-dropdown form-control" id="inputRegion">
+                        <option></option>
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -440,9 +453,10 @@
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputCountry">Country</label>
+                  <label for="inputSecondCountry">Country</label>
                   <div class="select-with-buttons">
-                    <select class="js-dropdown form-control" id="inputCountry">
+                    <select class="js-dropdown form-control" id="inputSecondCountry">
+                        <option></option>
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -460,6 +474,7 @@
                   <label for="inputMedication">Medication</label>
                   <div class="select-with-buttons">
                     <select class="js-dropdown form-control" id="inputMedication">
+                      <option></option>
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -472,6 +487,7 @@
                   </div>
                   <div class="second-select col-md-6">
                     <select class="js-dropdown form-control">
+                        
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -481,6 +497,7 @@
                   <label for="inputTreatments">Treatments</label>
                   <div class="select-with-buttons">
                     <select class="js-dropdown form-control" id="inputTreatments">
+                        <option></option>
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -493,6 +510,7 @@
                   </div>
                   <div class="second-select col-md-6">
                     <select class="js-dropdown form-control">
+                        
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -504,6 +522,7 @@
                   <label for="inputExcludeMedication">Exclude Medication</label>
                   <div class="select-with-buttons">
                     <select class="js-dropdown form-control" id="inputExcludeMedication">
+                        <option></option>
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -519,6 +538,7 @@
                   <label for="inputExcludeTreatments">Exclude Treatments</label>
                   <div class="select-with-buttons">
                     <select class="js-dropdown form-control" id="inputExcludeTreatments">
+                        <option></option>
                       <option>TEST</option>
                       <option>TEST2</option>
                     </select>
@@ -553,6 +573,7 @@
                   <label for="inputRegistered">Registered By</label>
 
                   <select class="js-dropdown form-control" id="inputRegistered">
+                      <option></option>
                     <option>TEST</option>
                     <option>TEST2</option>
                   </select>
@@ -560,7 +581,7 @@
                 <div class="form-group col-md-6">
                   <label for="inputJoinedTo">Joined To</label>
                   <div class="select-with-buttons">
-                    <input class="form-control" id="inputJoinedTo">
+                    <input class="form-control claendar-input" id="inputJoinedTo">
                     <div class="buttons-form">
                       <a href="#" class="btn collection-add-date" data-role="collection-add-date"><i
                           class="far fa-calendar-alt"></i></a>
@@ -574,6 +595,7 @@
                   <label for="inputCharity">Charity</label>
 
                   <select class="js-dropdown form-control" id="inputCharity">
+                      <option></option>
                     <option>TEST</option>
                     <option>TEST2</option>
                   </select>
@@ -596,7 +618,7 @@
                   <div class="container">
                     <div class="row">
                       <div class="custom-control custom-radio">
-                        <input type="radio" id="radioGender1" name="GenderRadio" class="custom-control-input" />
+                        <input type="radio" id="radioGender1" name="GenderRadio" class="custom-control-input" checked="checked" />
                         <label class="custom-control-label" for="radioGender1">Any</label>
                       </div>
                       <div class="custom-control custom-radio">
@@ -634,7 +656,7 @@
                     <div class="row">
                       <div class="custom-control custom-radio">
                         <input type="radio" id="radioCurrentlyMedication1" name="CurrentlyRadio"
-                          class="custom-control-input" />
+                          class="custom-control-input" checked="checked" />
                         <label class="custom-control-label" for="radioCurrentlyMedication1">Any</label>
                       </div>
                       <div class="custom-control custom-radio">
@@ -675,7 +697,7 @@
                   <div class="container">
                     <div class="row">
                       <div class="custom-control custom-radio">
-                        <input type="radio" id="radioDeletion1" name="DeletionRadio" class="custom-control-input" />
+                        <input type="radio" id="radioDeletion1" name="DeletionRadio" class="custom-control-input" checked="checked" />
                         <label class="custom-control-label" for="radioDeletion1">Any</label>
                       </div>
                       <div class="custom-control custom-radio">
@@ -696,7 +718,7 @@
                   <div class="container">
                     <div class="row">
                       <div class="custom-control custom-radio">
-                        <input type="radio" id="radioEnteredMedications1" name="EnteredMedicationsRadio" class="custom-control-input" />
+                        <input type="radio" id="radioEnteredMedications1" name="EnteredMedicationsRadio" class="custom-control-input" checked="checked" />
                         <label class="custom-control-label" for="radioEnteredMedications1">Any</label>
                       </div>
                       <div class="custom-control custom-radio">
@@ -715,7 +737,7 @@
                     <div class="container">
                       <div class="row">
                         <div class="custom-control custom-radio">
-                          <input type="radio" id="radioIncludeDeceased1" name="IncludeDeceasedRadio" class="custom-control-input" />
+                          <input type="radio" id="radioIncludeDeceased1" name="IncludeDeceasedRadio" class="custom-control-input" checked="checked" />
                           <label class="custom-control-label" for="radioIncludeDeceased1">Yes</label>
                         </div>
                         <div class="custom-control custom-radio">
@@ -732,7 +754,7 @@
                     <div class="container">
                       <div class="row">
                         <div class="custom-control custom-radio">
-                          <input type="radio" id="radioActivationStatus1" name="ActivationStatusRadio" class="custom-control-input" />
+                          <input type="radio" id="radioActivationStatus1" name="ActivationStatusRadio" class="custom-control-input" checked="checked" />
                           <label class="custom-control-label" for="radioActivationStatus1">Any</label>
                         </div>
                         <div class="custom-control custom-radio">
@@ -751,7 +773,7 @@
                     <div class="container">
                       <div class="row">
                         <div class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox" id="InStatus1">
+                            <input class="custom-control-input" type="checkbox" id="InStatus1" checked="checked" />
                           <label class="custom-control-label" for="InStatus1">Any</label>
                         </div>
                         <div class="custom-control custom-checkbox">
@@ -777,7 +799,7 @@
               
               <div class="col-md-12">
                 <div class="row buttons-submit">
-                  <a href="" class="btn">Reset Search Criteria</a>
+                  <a href="http://lr.karserj.com/admin/users/patient/?search_reset=1" class="btn btn-reset">Reset Search Criteria</a>
                   <button class="btn btn-search" type="submit">Search <i class="fas fa-search"></i></button>
                 </div>
               </div>
@@ -798,7 +820,20 @@
       </div>
       <div>
         <button class="btn btn-register">User Registration</button>
-        <button class="btn">Export</button>
+        <button class="btn btn-popup-export">Export</button>
+      </div>
+      <div class="popup-export">
+        <div class="popup-export-wrapper">
+          <div class="popup-export-close"><i class="fas fa-times-circle"></i></div>
+          <div class="popup-export-title"><p>If you would like to include current/previous medications and the year of diagnosis for a specific condition then please select the condition below</p>
+          </div>
+          <select class="js-dropdown form-control">
+            <option></option>
+            <option>TEST</option>
+            <option>TEST2</option>
+          </select>
+          <button class="btn">Export</button>
+        </div>
       </div>
     </div>
 
@@ -1025,6 +1060,7 @@
         <div class="select-phone">
           <label class="select-country-title" for="select-country">Select a country</label>
           <select class="js-dropdown" id="select-country">
+              <option></option>
             <option>TEST</option>
             <option>TEST2</option>
             <option>TEST3</option>
@@ -1045,8 +1081,9 @@
   </div>
   <div class="popup-content">
     <div class="container">
-      <h2 class="landscapeonly">Comments, questions, queries or suggestions<br>
+      <h2 class="land-scape-only">Comments, questions, queries or suggestions<br>
         <span>- we would love to hear from you</span></h2>
+        <div class="popup-close"><i class="fas fa-times-circle"></i></div>
     <form method="POST" class="ajaxForm" action="http://lr.karserj.com/send-message" novalidate="novalidate">
       <div class="row">
       <div class="col-md-5">
@@ -1172,7 +1209,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/jquery.sumoselect.min.js"></script>
+  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

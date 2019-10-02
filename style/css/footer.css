@@ -24,18 +24,6 @@
   margin-right: 10px;
 }
 
-.language-list .SumoSelect {
-  width: 70px;
-}
-
-.language-list .SumoSelect span {
-  color: white;
-}
-
-.language-list .SumoSelect .SelectBox {
-  background-color: transparent;
-}
-
 .navigation-links {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -46,7 +34,7 @@
   padding: 0;
   margin: 0;
   padding-right: 5px;
-  width: 48%;
+  width: 50%;
 }
 
 .navigation-links ul li {
