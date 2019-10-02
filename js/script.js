@@ -1,9 +1,22 @@
 $(document).ready(function() {
 // логика селектов (врзможно нужно переделать)
-    
     $('.js-dropdown').select2({
-        placeholder: ''
+        placeholder: 'Start typing or select an item...'
     });
+
+// scroll header  
+$( window ).scroll(function() {
+    if ($(this).scrollTop() > 250){
+        $('.nav-toggle').addClass('header-fixed');
+        $('.header-block-toggle').show();
+    }
+     if($(this).scrollTop() > 300){
+        $('.header-fixed').css('top', '0');
+    }else{
+        $('.nav-toggle').removeClass('header-fixed').css('top', '');
+        $('.header-block-toggle').hide();
+    }
+})
     
 // adaptive logic
     $('.menu-link').click(function(){
@@ -28,11 +41,6 @@ $('.popup-close').click(function(){
     $('.popup-content').slideToggle();
 })
 
-// логика добавление селектов на кнопку
-   $('.collection-add-btn').click(function(){
-       console.log( $(this).prev('select'))
-      
-   })
 // логика раскрывания таблицы в адаптивном виде
     $(".tab-mobile").click(function() {
         $(this).next('div').slideToggle();
