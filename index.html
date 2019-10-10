@@ -28,6 +28,32 @@
 
   <!-- header -->
   <div class="header-block-toggle"></div>
+  <nav class="login-header">
+    <div class="container">
+      <div class="login-content">
+    <h2 class="bold">Login</h2>
+    <div class="form-container">
+    <form class="login-form" method="post" action="http://lr.karserj.com/user-login-check">
+      <div class="login-container">
+        <label for="email-login">Email</label>
+        <input id="email-login" type="email" placeholder="Enter email" />
+      </div>
+      <div class="login-container">
+          <label for="password-login">Password</label>
+          <input id="password-login" type="password" placeholder="Password" />
+      </div>
+      <div class="login-container">
+        <input type="submit" value="Enter" class="btn btn-login"/>
+      </div>
+    </form>
+    <a href="#">Forgot your password?</a>
+  </div>
+    <div class="close-login-container">
+      <a href="#" class="close-login"><i class="fas fa-times" aria-hidden="true"></i></a>
+    </div>
+    </div>
+  </div>
+  </nav>
   <nav class="navbar navbar-expand-md navbar-dark nav-toggle">
     <div class="container">
     <div class="brand-image">
@@ -158,6 +184,9 @@
 
         <li class="nav-item logout">
           <a class="nav-link" href="#">Logout</a>
+        </li>
+        <li class="nav-item login">
+          <a id="login" class="nav-link" href="#"><i class="far fa-user"></i>Login</a>
         </li>
       </ul>
     </div>
