@@ -4,6 +4,13 @@ $(document).ready(function() {
         placeholder: 'Start typing or select an item...'
     });
 
+
+//login form logic
+$('#login, .close-login').click(function() {
+    $('.login-header').slideToggle();
+
+})
+
 // scroll header  
 $( window ).scroll(function() {
     if ($(this).scrollTop() > 250){
@@ -41,7 +48,7 @@ $('.popup-close').click(function(){
     $('.popup-content').slideToggle();
 })
 
-// логика раскрывания таблицы в адаптивном виде
+// логика таблицы в адаптивном виде
     $(".tab-mobile").click(function() {
         $(this).next('div').slideToggle();
         $(this).find(".fa-plus-circle").toggle(100);
